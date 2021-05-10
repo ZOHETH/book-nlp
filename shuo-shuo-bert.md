@@ -1,14 +1,12 @@
 ---
-description: 尝试仅仅用文字来解释BERT，锻炼表达、备忘。
+description: 尝试仅仅用文字来解释BERT，锻炼表达、备忘。当然，作为备忘是会附带图片的，但文字内容不依赖于图片。
 ---
 
 # 说说BERT
 
-#### 说说BERT
+作为备忘是会附带图片的，但文字内容不依赖于图片。
 
-尝试仅仅用文字来解释BERT，锻炼表达、备忘。
-
-当然，作为备忘是会附带图片的，但文字内容不依赖于图片。
+**https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/seq2seq\_v9.pdf**
 
 **Transformer**
 
@@ -18,7 +16,7 @@ description: 尝试仅仅用文字来解释BERT，锻炼表达、备忘。
 
 ![image-20201224232423807](C:\Users\Z0HET\AppData\Roaming\Typora\typora-user-images\image-20201224232423807.png)
 
-但是RNN做这个活是有问题的，她不能并行化，她总是要从一边到另一边，一步步的提取出信息，然后一步步的生成新的sequence。
+但是RNN做这个活是有问题的，它不能并行化，它总是要从一边到另一边，一步步的提取出信息，然后一步步的生成新的sequence。
 
 Transformer用到一个玩意叫Self-attention。这里又用到了attention，那就提一嘴attention，**Attention**还是得好好说说。
 
@@ -26,7 +24,7 @@ Transformer用到一个玩意叫Self-attention。这里又用到了attention，�
 
 所谓的注意力，就是给inputs加一组权重，哪里权重大就说注意力集中在哪里。那这个系数怎么来呢，普通方法（RNN）不是可以得到一个vector吗，用这个vector和inputs运算便可以得到。所以说，Attention其实就是一个vec和一堆vec（inputs）两两运算，然后得到在那一堆vec（inputs）上的一组权重。
 
-![image-20201225002154299](C:\Users\Z0HET\AppData\Roaming\Typora\typora-user-images\image-20201225002154299.png)
+![](.gitbook/assets/qi-ye-wei-xin-jie-tu-20210510111406.png)
 
 终于要进入正题了，**Self-attention**。
 
